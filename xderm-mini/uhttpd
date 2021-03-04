@@ -1,3 +1,4 @@
+#!/bin/bash
 
 config uhttpd 'main'
 	list listen_http '0.0.0.0:80'
