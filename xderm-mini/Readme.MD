@@ -4,7 +4,7 @@
 wget -O /etc/config/uhttpd https://raw.githubusercontent.com/portalssh/openwrt/main/xderm-mini/uhttpd && /etc/init.d/uhttpd restart
 ```
 
-* Edit Config Redsocksmopenwrt
+* Edit Config Redsocks openwrt
 --------
 ```
 wget -O /etc/redsocks.conf https://raw.githubusercontent.com/portalssh/openwrt/main/xderm-mini/redsocks
