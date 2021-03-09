@@ -1,0 +1,1 @@
+Sunxi-Cortexa53-HG680P-B860H
