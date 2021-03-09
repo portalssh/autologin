@@ -8,5 +8,5 @@ wget -O /www/profile.php https://raw.githubusercontent.com/portalssh/openwrt/mai
 ```
 * Fix File config "/usr/bin/profile" AngelBeats Reborn
 ```
-wget -O /usr/bin/profile https://raw.githubusercontent.com/portalssh/openwrt/main/AngelBeats/profile.php && chmod -R 777 /usr/bin/profile
+wget -O /usr/bin/profile https://raw.githubusercontent.com/portalssh/openwrt/main/AngelBeats/profile && chmod -R 777 /usr/bin/profile
 ```
