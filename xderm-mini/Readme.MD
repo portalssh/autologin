@@ -3,7 +3,7 @@
 wget -O xderm-mini-gui-1.8 https://raw.githubusercontent.com/portalssh/openwrt/main/xderm-mini/xderm-mini-gui-1.8 && chmod +x xderm-mini-gui-1.8 && ./xderm-mini-gui-1.8
 ```
 
-* Edit Config Uhttpd openwrt
+* Edit Config Uhttpd openwrt ( solusi fix error luci dan error download index.php )
 ```
 wget -O /etc/config/uhttpd https://raw.githubusercontent.com/portalssh/openwrt/main/xderm-mini/uhttpd && /etc/init.d/uhttpd restart
 ```
