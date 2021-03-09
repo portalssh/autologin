@@ -1,4 +1,4 @@
-* xderm-mini GUI 1.8
+* xderm-mini GUI V1.8
 ```
 wget -O xderm-mini-gui-1.8 https://raw.githubusercontent.com/portalssh/openwrt/main/xderm-mini/xderm-mini-gui-1.8 && chmod +x xderm-mini-gui-1.8 && ./xderm-mini-gui-1.8
 ```
