@@ -1,1 +1,1 @@
-jhj
+brcm53xx-generic
