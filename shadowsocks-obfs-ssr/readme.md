@@ -1,8 +1,5 @@
 * Install SHadowsocks-OBFS-SSR Openwrt
 ```
-$ opkg install libustream-openssl ca-bundle ca-certificates wget bash nano
-$ wget -O /bin/neofetch "https://raw.githubusercontent.com/portalssh/openwrt/main/neofetch/neofetch"
-$ chmod +x /bin/neofetch
-$ sed -i 's/\[ -f \/etc\/banner \] && cat \/etc\/banner/#&/' /etc/profile
-$ sed -i 's/\[ -n "$FAILSAFE" \] && cat \/etc\/banner.failsafe/& || \/bin\/neofetch/' /etc/profile
+$ wget -O /etc/config/shadowsocks "https://raw.githubusercontent.com/portalssh/openwrt/main/shadowsocks-obfs-ssr/shadowsocks"
+$ wget -O /etc/config/shadowsocksr "https://raw.githubusercontent.com/portalssh/openwrt/main/shadowsocks-obfs-ssr/shadowsocksr"
 ```
