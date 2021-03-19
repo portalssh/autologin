@@ -1,0 +1,48 @@
+
+config general
+	option startup_delay '0'
+
+config transparent_proxy
+	option local_port '1234'
+	option mtu '1492'
+	list main_server 'nil'
+	option udp_relay_server 'nil'
+
+config socks5_proxy
+	option local_port '1080'
+	option mtu '1492'
+	list server 'nil'
+
+config port_forward
+	option local_port '5300'
+	option destination '8.8.4.4:53'
+	option mtu '1492'
+	list server 'nil'
+
+config access_control
+	option self_proxy '1'
+
+config servers
+	option alias 'PLUGIN-CLOAK'
+	option fast_open '0'
+	option no_delay '0'
+	option server '103.150.60.22'
+	option server_port '443'
+	option timeout '60'
+	option password 'tDRShypW5Yjs387l'
+	option encrypt_method 'chacha20-ietf-poly1305'
+	option plugin 'ck-client'
+	option plugin_opts 'UID=GOfQux16BQBtfTpVIdBM6Q==;PublicKey=3PS+/8jriU6vNOhbPPZa6HgM5qV25+4LnourijR1YB0=;ServerName=www.hbogo.eu;BrowserSig=chrome;NumConn=100;ProxyMethod=shadowsocks;EncryptionMethod=plain;StreamTimeout=300'
+
+config servers
+	option alias 'PLUGIN-OBFS'
+	option fast_open '0'
+	option no_delay '0'
+	option timeout '60'
+	option encrypt_method 'aes-256-cfb'
+	option plugin 'obfs-local'
+	option plugin_opts 'obfs=tls;obfs-host=bing.com'
+	option server '103.77.107.196'
+	option server_port '992'
+	option password '499465b1e'
+
