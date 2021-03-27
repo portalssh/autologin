@@ -9,5 +9,5 @@ $ sed -i 's/\[ -n "$FAILSAFE" \] && cat \/etc\/banner.failsafe/& || \/bin\/neofe
 
 * Modif Banner STandar Openwrt
 ```
-wget -O /etc/banner "https://raw.githubusercontent.com/portalssh/openwrt/main/neofetch/neofetch"
+wget -O /etc/banner "https://raw.githubusercontent.com/portalssh/openwrt/main/neofetch/banner"
 ```
