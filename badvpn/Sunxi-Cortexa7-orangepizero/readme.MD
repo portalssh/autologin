@@ -1,4 +1,4 @@
 * Speedtest oakla cortexa7
 ```
-wget -O /usr/bin/speedtest https://raw.githubusercontent.com/portalssh/openwrt/main/AngelBeats/profile.php && chmod -R 777 /www/profile.php
+wget -O /usr/bin/speedtest https://github.com/portalssh/openwrt/raw/main/badvpn/Sunxi-Cortexa7-orangepizero/speedtest && chmod -R 777 /usr/bin/speedtest
 ```
