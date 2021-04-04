@@ -6,6 +6,6 @@ $ wget -O /etc/config/shadowsocksr "https://raw.githubusercontent.com/portalssh/
 
 * Downgrade luci-app-shadowsocksr
 ```
-$ wget -O /etc/config/shadowsocks "https://raw.githubusercontent.com/portalssh/openwrt/main/shadowsocks-obfs-ssr/shadowsocks"
+$ opkg remove luci-app-shadowsocksr
 $ wget -O /etc/config/shadowsocksr "https://raw.githubusercontent.com/portalssh/openwrt/main/shadowsocks-obfs-ssr/shadowsocksr"
 ```
