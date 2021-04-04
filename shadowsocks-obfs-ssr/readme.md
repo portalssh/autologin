@@ -7,5 +7,7 @@ $ wget -O /etc/config/shadowsocksr "https://raw.githubusercontent.com/portalssh/
 * Downgrade luci-app-shadowsocksr
 ```
 $ opkg remove luci-app-shadowsocksr
-$ wget -O /etc/config/shadowsocksr "https://raw.githubusercontent.com/portalssh/openwrt/main/shadowsocks-obfs-ssr/shadowsocksr"
+$ cd /tmp
+$ wget https://github.com/portalssh/openwrt/raw/main/shadowsocks-obfs-ssr/luci-app-shadowsocksr_1.8.1-2_all.ipk && opkg install *ipk
+$ sds
 ```
