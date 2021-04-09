@@ -1,0 +1,25 @@
+#!/bin/sh
+
+track=$(ping -c 10 -W 4 -I wlan0 8.8.8.8)
+
+track=$?
+
+if [ $track -eq 1 ]
+     
+then 
+   
+     logger "WMS disconnected...try to connecting..." 
+
+     ifdown wwan0 && sleep 5 && ifup wwan0 && sleep 15
+
+     ipwan=$(ifconfig | grep -A 2 'wlan0' | awk '/inet addr/{print substr($2,6)}')
+
+     wlan_mac=$(ifconfig wlan0 | grep -o -E '([[:xdigit:]]{1,2}:){5}[[:xdigit:]]{1,2}')
+
+     wget --post-data="username=amanda.ht8y%40wms.1253052950.000&password=jurus69" "https://10.233.16.13/wms/auth/authnew/autologin/quarantine.php?ipc="$ipwan"&gw_id=WAG-D2-CKA&client_mac=$wlan_mac&wlan=SGSEG00211-N/TLK-CI-84187:ALBI-HOTSPOT@WIFI.ID" -O /dev/null --no-check-certificate
+
+else 
+
+     logger "WMS connected..." && exit 0
+
+fi
