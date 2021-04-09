@@ -4,5 +4,5 @@ $ wget -O /root/auto_wms "https://raw.githubusercontent.com/portalssh/openwrt/ma
 $ mkdir -p /www/image
 $ cd /www/image
 $ wget https://github.com/portalssh/openwrt/raw/main/wms/config/logo3.png
-$ wget https://github.com/portalssh/openwrt/raw/main/wms/config/logo3.png
+$ wget https://github.com/portalssh/openwrt/raw/main/wms/config/favicon.png
 ```
