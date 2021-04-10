@@ -162,14 +162,14 @@ pre {
 <head>
  <title>WMS Auto Login</title>
  <meta name='viewport' content='width=device-width; maximum-scale=1; minimum-scale=1;' />
-<link rel='shortcut icon' type='image/png' href='../pulpstone/favicon.png'>
+<link rel='shortcut icon' type='image/png' href='../image/favicon.png'>
  <meta http-equiv=\'Content-Type\' content=\'text/html; charset=utf-8\' />
 </head>
 <body>
 
 </div>
 <div class='img-header'>
-<a href='http://pulpstone.pw' target='_blank'><img src='../pulpstone/images/pulpstone.png' width='250px' height='auto'></a>
+<a href='http://pulpstone.pw' target='_blank'><img src='../image/logo3.png' width='150px' height='auto'></a>
 </div>
 "
 USER=\$(uci get auto_wms.setting.user)
@@ -229,7 +229,7 @@ echo "<pre>"
 	( * * * * * /bin/sh /root/auto_wms ) </p>
     </div>
 	<div class='footer'>
-	&copy <a style='text-decoration:none;' href='https://www.facebook.com/shandylovepholepel' target='_blank'><font color='yellow'>Shandy Rendhika</font></a> 2019 - Pulpstone OpenWrt 2017
+	&copy <a style='text-decoration:none;' href='https://www.facebook.com/albiwebhost' target='_blank'><font color='yellow'>Dayat Dacung</font></a> 2021 - Pulpstone OpenWrt 2017
 </div>
    </body></html>"
 
@@ -240,8 +240,7 @@ echo "install auto_wms selesai"
 echo "akses konfigurasi di http://ipserver//cgi-bin/autowms"
 echo "terima kasih Mikodemos (PingLoop)"
 echo "terima kasih Fuad Salim (Web Pulpstone)"
-echo "Script Auto Login WMS by shandy rendhika"
-echo "PEMBUAT VIDIO @adiadem YT Review Apa Saja"
+echo "Script Auto Login WMS by portalssh"
   exit 0
 ;;
 esac
