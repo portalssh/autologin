@@ -2,11 +2,11 @@
 
 #username wifi.id
 
-user="61574068961"
+user="username_wifi.id"
 
 #password wifi.id
 
-pass="gdp"
+pass="password_wifi.id"
 
 track2=$(ping -c 2 -W 4 -I wlan1 8.8.8.8)
 
@@ -24,7 +24,7 @@ then
 
      wlan_mac2=$(ifconfig wlan1 | grep -o -E '([[:xdigit:]]{1,2}:){5}[[:xdigit:]]{1,2}')
 
-     wget --user-agent="Mozilla/5.0" --post-data="username=$user@spin2&password=$pass" "https://10.233.16.32/authnew/login/check_login.php?ipc="$ipwan2"&gw_id=WAG-D2-CKA&client_mac=$wlan_mac2&wlan=SGSEG00211-N/TLK-CI-84187:@wifi.id" -O /dev/null --no-check-certificate 
+     wget --user-agent="Mozilla/5.0" --post-data="username=$user@spin2&password=$pass" "https://10.233.16.32/authnew/login/check_login.php?ipc="$ipwan2"&gw_id=WAG-D2-CVd&client_mac=$wlan_mac2&wlan=SGSEG00211-N/TLK-CI-84587:@wifi.id" -O /dev/null --no-check-certificate 
 
 else 
      
