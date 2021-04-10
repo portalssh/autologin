@@ -28,7 +28,7 @@ echo melakukan regsitrasi jaringan WMS
 # Login ke WMS
 echo Username anda $(uci get auto_wms.setting.user)
 echo Password anda $(uci get auto_wms.setting.pass)
-wget --post-data="username="$(uci get auto_wms.setting.user)"."$key"@freeMS&password="$(uci get auto_wms.setting.pass)"" "https://welcome2.wifi.id/wms/auth/authnew/autologin/quarantine.php?ipc="$ipwan"&gw_id="$(uci get auto_wms.setting.gw_id)"&mac="$mac"&redirect=&wlan="$(uci get auto_wms.setting.wlan_id)"/"$(uci get auto_wms.setting.wlan_id1)"" -O /dev/null 
+wget --post-data="username="$(uci get auto_wms.setting.user)"."$key"ht8y%40wms.1253052950.000&password="$(uci get auto_wms.setting.pass)"" "https://welcome2.wifi.id/wms/auth/authnew/autologin/quarantine.php?ipc="$ipwan"&gw_id="$(uci get auto_wms.setting.gw_id)"&mac="$mac"&redirect=&wlan="$(uci get auto_wms.setting.wlan_id)"/"$(uci get auto_wms.setting.wlan_id1)"" -O /dev/null 
 echo Login Sukses
 fi
 	   
@@ -36,8 +36,8 @@ EOF
 
 cat > /etc/config/auto_wms << END
 config global 'setting'
-	option user 'rara1111'
-	option pass 'rara1111'
+	option user 'username'
+	option pass 'password'
 	option gw_id 'WAG-D5-RKT'
 	option wlan_id 'MLGDI00064'
 	option wlan_id1 'TLK-WI32512066-0001'
@@ -162,47 +162,47 @@ pre {
 <head>
  <title>WMS Auto Login</title>
  <meta name='viewport' content='width=device-width; maximum-scale=1; minimum-scale=1;' />
-<link rel='shortcut icon' type='image/png' href='../pulpstone/favicon.png'>
+<link rel='shortcut icon' type='image/png' href='../image/favicon.png'>
  <meta http-equiv=\'Content-Type\' content=\'text/html; charset=utf-8\' />
 </head>
 <body>
 
 </div>
 <div class='img-header'>
-<a href='http://pulpstone.pw' target='_blank'><img src='../pulpstone/images/pulpstone.png' width='250px' height='auto'></a>
+<a href='http://pulpstone.pw' target='_blank'><img src='../image/logo3.png' width='150px' height='auto'></a>
 </div>
 "
-USER=\$(uci get auto_wms.setting.user)
-PASS=\$(uci get auto_wms.setting.pass)
-GW=\$(uci get auto_wms.setting.gw_id)
-WLAN=\$(uci get auto_wms.setting.wlan_id)
-WLAN1=\$(uci get auto_wms.setting.wlan_id1)
+USER=$(uci get auto_wms.setting.user)
+PASS=$(uci get auto_wms.setting.pass)
+GW=$(uci get auto_wms.setting.gw_id)
+WLAN=$(uci get auto_wms.setting.wlan_id)
+WLAN1=$(uci get auto_wms.setting.wlan_id1)
 
 get_post(){
-     for qr in \$QUERY_STRING
+     for qr in $QUERY_STRING
      do          
-          if [ "\${qr%%=*}" == "\$1" ];then              
-              echo \${qr##*=}| sed 's/+/ /g' 
+          if [ "${qr%%=*}" == "$1" ];then              
+              echo ${qr##*=}| sed 's/+/ /g' 
               break
           fi 
      done  
 }
-    if [ "\$REQUEST_METHOD" = POST ]; then
+    if [ "$REQUEST_METHOD" = POST ]; then
             read -t 3 QUERY_STRING
-            QUERY_STRING=\$(echo \$QUERY_STRING | sed 's/&/ /g') 
-            QUERY_STRING=\$(echo \$QUERY_STRING | sed 's/%3A/:/g')             
+            QUERY_STRING=$(echo $QUERY_STRING | sed 's/&/ /g') 
+            QUERY_STRING=$(echo $QUERY_STRING | sed 's/%3A/:/g')             
             
-            if [ "\$(get_post update)" == "Update Config" ];then
-                  USER=\$(get_post user)
-                  PASS=\$(get_post pass)
-				  GW=\$(get_post gw_id)
-				  WLAN=\$(get_post wlan_id)
-				  WLAN1=\$(get_post wlan_id1)
-				  uci set auto_wms.setting.user=\$USER
-				  uci set auto_wms.setting.pass=\$PASS
-				  uci set auto_wms.setting.gw_id=\$GW
-				  uci set auto_wms.setting.wlan_id=\$WLAN
-				  uci set auto_wms.setting.wlan_id1=\$WLAN1
+            if [ "$(get_post update)" == "Update Config" ];then
+                  USER=$(get_post user)
+                  PASS=$(get_post pass)
+				  GW=$(get_post gw_id)
+				  WLAN=$(get_post wlan_id)
+				  WLAN1=$(get_post wlan_id1)
+				  uci set auto_wms.setting.user=$USER
+				  uci set auto_wms.setting.pass=$PASS
+				  uci set auto_wms.setting.gw_id=$GW
+				  uci set auto_wms.setting.wlan_id=$WLAN
+				  uci set auto_wms.setting.wlan_id1=$WLAN1
 				  uci commit auto_wms
                   killall auto_wms
                   auto_wms &         
@@ -214,10 +214,10 @@ get_post(){
     <h1>WMS Auto Login</h1>
 	<h3>PULPSTONE OpenWrt</h3>
     <form method=\"post\">       
-        <div class=label>Username :</div><input name=\"user\" class=text value=\"\$USER\"><br>
-        <div class=label>Password :</div><input name=\"pass\" class=text value=\"\$PASS\"><br>
-		<div class=label>GW ID :</div><input name=\"gw_id\" class=text value=\"\$GW\"><br>
-		<div class=label>Wlan ID :</div><input name=\"wlan_id\" class=text value=\"\$WLAN\">/<input name=\"wlan_id1\" class=text value=\"\$WLAN1\"><br>
+        <div class=label>Username :</div><input name=\"user\" class=text value=\"$USER\"><br>
+        <div class=label>Password :</div><input name=\"pass\" class=text value=\"$PASS\"><br>
+		<div class=label>GW ID :</div><input name=\"gw_id\" class=text value=\"$GW\"><br>
+		<div class=label>Wlan ID :</div><input name=\"wlan_id\" class=text value=\"$WLAN\">/<input name=\"wlan_id1\" class=text value=\"$WLAN1\"><br>
         <input type=\"submit\" name=\"update\" value=\"Update Config\">
         
 
@@ -225,11 +225,11 @@ get_post(){
     "
 echo "<pre>"
     echo "</pre>
-	<p> NB. Lakukan penambahan script Schedule di router </br>
-	( * * * * * /bin/sh /root/auto_wms ) </p>
+	<p> NB. Lakukan penambahan script "scheduled tasks" di router </br>
+	( * * * * * sh /root/auto_wms ) </p>
     </div>
 	<div class='footer'>
-	&copy <a style='text-decoration:none;' href='https://www.facebook.com/shandylovepholepel' target='_blank'><font color='yellow'>Shandy Rendhika</font></a> 2019 - Pulpstone OpenWrt 2017
+	&copy <a style='text-decoration:none;' href='https://www.facebook.com/albiwebhost' target='_blank'><font color='yellow'>Dayat Dacung</font></a> 2021 - Pulpstone OpenWrt 2017
 </div>
    </body></html>"
 
@@ -240,8 +240,7 @@ echo "install auto_wms selesai"
 echo "akses konfigurasi di http://ipserver//cgi-bin/autowms"
 echo "terima kasih Mikodemos (PingLoop)"
 echo "terima kasih Fuad Salim (Web Pulpstone)"
-echo "Script Auto Login WMS by shandy rendhika"
-echo "PEMBUAT VIDIO @adiadem YT Review Apa Saja"
+echo "Script Auto Login WMS by portalssh"
   exit 0
 ;;
 esac
