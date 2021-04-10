@@ -1,0 +1,33 @@
+#!/bin/sh
+
+#username wifi.id
+
+user="61574068961"
+
+#password wifi.id
+
+pass="gdp"
+
+track2=$(ping -c 2 -W 4 -I wlan1 8.8.8.8)
+
+track2=$?
+
+if [ $track2 -eq 1 ]
+     
+then 
+     
+     logger "wifi.id disconnected...triying to reconnect..." 
+
+     ifdown wwan1 && sleep 5 && ifup wwan1 && sleep 20
+
+     ipwan2=$(ifconfig | grep -A 2 'wlan1' | awk '/inet addr/{print substr($2,6)}')
+
+     wlan_mac2=$(ifconfig wlan1 | grep -o -E '([[:xdigit:]]{1,2}:){5}[[:xdigit:]]{1,2}')
+
+     wget --user-agent="Mozilla/5.0" --post-data="username=$user@spin2&password=$pass" "https://10.233.16.32/authnew/login/check_login.php?ipc="$ipwan2"&gw_id=WAG-D2-CKA&client_mac=$wlan_mac2&wlan=SGSEG00211-N/TLK-CI-84187:@wifi.id" -O /dev/null --no-check-certificate 
+
+else 
+     
+     logger "wifi.id connected..." && exit 0
+
+fi
