@@ -36,8 +36,8 @@ EOF
 
 cat > /etc/config/auto_wms << END
 config global 'setting'
-	option user 'username-venue'
-	option pass 'password-venue'
+	option user 'username'
+	option pass 'password'
 	option gw_id 'WAG-D5-RKT'
 	option wlan_id 'MLGDI00064'
 	option wlan_id1 'TLK-WI32512066-0001'
