@@ -10,7 +10,7 @@ $ wget --no-check-certificate https://github.com/portalssh/openwrt/raw/main/wms/
 contoh curl bash login page
 
 <div  align="center">    
-  <img src="./config/wms-config.png" width = "400" alt="curl bash" align=center />
+  <img src="./config/wms-config.png" width = "600" alt="curl bash" align=center />
 </div>
 
 * CLI AutoLogin WMS Venue Update 10-04-2021
