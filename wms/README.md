@@ -8,7 +8,6 @@ $ wget --no-check-certificate https://github.com/portalssh/openwrt/raw/main/wms/
 $ wget --no-check-certificate https://github.com/portalssh/openwrt/raw/main/wms/config/favicon.png
 ```
 contoh curl bash login page
-```
 
 <div  align="center">    
   <img src="./config/wms-config.png" width = "400" alt="curl bash" align=center />
