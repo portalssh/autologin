@@ -7,6 +7,7 @@ $ cd /www/image
 $ wget --no-check-certificate https://github.com/portalssh/openwrt/raw/main/wms/config/logo3.png
 $ wget --no-check-certificate https://github.com/portalssh/openwrt/raw/main/wms/config/favicon.png
 $ cd
+$ /etc/init.d/uhttpd restart
 ```
 
 * contoh curl bash login page
