@@ -9,6 +9,11 @@ $ wget --no-check-certificate https://github.com/portalssh/openwrt/raw/main/wms/
 $ cd
 $ /etc/init.d/uhttpd restart
 ```
+* Tampilan GUI AutoLogin "
+
+<div  align="center">    
+  <img src="./config/GUI-wms.png" width = "1200" alt="curl bash" align=center />
+</div>
 
 * contoh curl bash login page
 
