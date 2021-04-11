@@ -8,17 +8,17 @@ $ wget --no-check-certificate https://github.com/portalssh/openwrt/raw/main/wms/
 $ wget --no-check-certificate https://github.com/portalssh/openwrt/raw/main/wms/config/favicon.png
 ```
 * contoh curl bash login page
-```
+
 <div  align="center">    
   <img src="./config/curl-wms.png" width = "1200" alt="curl bash" align=center />
 </div>
-```
+
 * contoh curl bash login page
-```
+
 <div  align="center">    
   <img src="./config/wms-config.png" width = "1200" alt="curl bash" align=center />
 </div>
-```
+
 * CLI AutoLogin WMS Venue Update 10-04-2021
 ```
 $ wget --no-check-certificate https://raw.githubusercontent.com/portalssh/openwrt/main/wms/config/wms_sh
