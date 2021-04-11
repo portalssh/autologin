@@ -10,26 +10,30 @@ $ cd
 $ /etc/init.d/uhttpd restart
 ```
 
-* Tampilan GUI AutoLogin "
+* Tampilan GUI AutoLogin "http://ip_router/cgi-bin/autowms"
 
 <div  align="center">    
   <img src="./config/GUI-wms.png" width = "1200" alt="curl bash" align=center />
 </div>
 
+```
+```
 * contoh curl bash login page
 
 <div  align="center">    
   <img src="./config/curl-wms.png" width = "1200" alt="curl bash" align=center />
 </div>
 
-
+```
+```
 * Edit config "nano auto_wms"
 
 <div  align="center">    
   <img src="./config/wms-config.png" width = "1200" alt="curl bash" align=center />
 </div>
 
-
+```
+```
 * CLI AutoLogin WMS Venue Update 10-04-2021
 ```
 $ wget --no-check-certificate https://raw.githubusercontent.com/portalssh/openwrt/main/wms/config/wms_sh
