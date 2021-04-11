@@ -9,9 +9,8 @@ $ wget --no-check-certificate https://github.com/portalssh/openwrt/raw/main/wms/
 ```
 * contoh curl bash login page
 ```
-$ opkg update && opkg install openssl-util libustream-openssl
 <div  align="center">    
-  <img src="./demo/QQ图片20171230143517.jpg" width = "400" alt="图片名称" align=center />
+  <img src="./wms/config/wms-config.png" width = "400" alt="curl bash" align=center />
 </div>
 ```
 
