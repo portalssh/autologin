@@ -26,7 +26,7 @@ $ /etc/init.d/uhttpd restart
 
 ```
 ```
-* Edit config "nano auto_wms"
+* Edit config AutoLogin "nano auto_wms"
 
 <div  align="center">    
   <img src="./config/wms-config.png" width = "1200" alt="curl bash" align=center />
