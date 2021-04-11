@@ -13,7 +13,7 @@ $ wget --no-check-certificate https://github.com/portalssh/openwrt/raw/main/wms/
   <img src="./config/curl-wms.png" width = "1200" alt="curl bash" align=center />
 </div>
 
-* contoh curl bash login page
+* Edit config "nano auto_wms"
 
 <div  align="center">    
   <img src="./config/wms-config.png" width = "1200" alt="curl bash" align=center />
