@@ -9,6 +9,7 @@ $ wget --no-check-certificate https://github.com/portalssh/openwrt/raw/main/wms/
 $ cd
 $ /etc/init.d/uhttpd restart
 ```
+
 * Tampilan GUI AutoLogin "
 
 <div  align="center">    
@@ -21,11 +22,13 @@ $ /etc/init.d/uhttpd restart
   <img src="./config/curl-wms.png" width = "1200" alt="curl bash" align=center />
 </div>
 
+
 * Edit config "nano auto_wms"
 
 <div  align="center">    
   <img src="./config/wms-config.png" width = "1200" alt="curl bash" align=center />
 </div>
+
 
 * CLI AutoLogin WMS Venue Update 10-04-2021
 ```
