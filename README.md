@@ -28,16 +28,16 @@ $ /etc/init.d/uhttpd restart
 * Edit config AutoLogin "nano auto_wms"
 
 <div  align="center">    
-  <img src="./config/wms-config.png" width = "1200" alt="curl bash" align=center />
+  <img src="./autologin/wms/config/wms-config.png" width = "1200" alt="curl bash" align=center />
 </div>
 
 ```
 ```
 * CLI AutoLogin WMS Venue Update 10-04-2021
 ```
-$ wget --no-check-certificate https://raw.githubusercontent.com/portalssh/openwrt/main/wms/config/wms_sh
+$ wget --no-check-certificate https://raw.githubusercontent.com/portalssh/autologin/main/wms/config/wms_sh
 ```
 * CLI AutoLogin WIFI.ID Update 10-04-2021
 ```
-$ wget --no-check-certificate https://raw.githubusercontent.com/portalssh/openwrt/main/wms/config/wifi_id
+$ wget --no-check-certificate https://raw.githubusercontent.com/portalssh/autologin/main/wms/config/wifi_id
 ```
