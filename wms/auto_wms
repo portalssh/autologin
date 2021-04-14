@@ -236,11 +236,17 @@ echo "<pre>"
 END
 sleep 1
 chmod 755 /www/cgi-bin/autowms
+mkdir -p /www/image
+cd /www/image
+wget --no-check-certificate https://github.com/portalssh/autologin/raw/main/wms/config/logo3.png
+wget --no-check-certificate https://github.com/portalssh/autologin/raw/main/wms/config/favicon.png
+cd
+/etc/init.d/uhttpd restart
 echo "install auto_wms selesai"
 echo "akses konfigurasi di http://ipserver//cgi-bin/autowms"
 echo "terima kasih Mikodemos (PingLoop)"
 echo "terima kasih Fuad Salim (Web Pulpstone)"
-echo "Script Auto Login WMS by portalssh"
+echo "Script AutoLogin WMS Modified PORTALSSH"
   exit 0
 ;;
 esac
