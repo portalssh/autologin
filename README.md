@@ -17,7 +17,7 @@ $ /etc/init.d/uhttpd restart
 
 ```
 ```
-* contoh curl bash login page
+* contoh curl bash login page untuk mendapatkan ID WMS
 
 <div  align="center">    
   <img src="./wms/config/curl-wms.png" width = "1200" alt="curl bash" align=center />
@@ -25,7 +25,7 @@ $ /etc/init.d/uhttpd restart
 
 ```
 ```
-* Edit config AutoLogin "nano auto_wms"
+* Edit config AutoLogin via putty ketik "nano auto_wms" dan sesuaikan dengan ID WMS anda
 
 <div  align="center">    
   <img src="./wms/config/wms-config.png" width = "1200" alt="curl bash" align=center />
