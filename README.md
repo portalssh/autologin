@@ -1,4 +1,4 @@
-* installasi GUI AutoLogin WMS Venue Update 10-04-2021
+* installasi GUI AutoLogin WMS Venue Update 15-04-2021
 ```
 $ wget --no-check-certificate https://raw.githubusercontent.com/portalssh/autologin/main/wms/auto_wms && chmod 755 ./auto_wms && ./auto_wms install
 $ mkdir -p /www/image
@@ -33,11 +33,11 @@ $ /etc/init.d/uhttpd restart
 
 ```
 ```
-* CLI AutoLogin WMS Venue Update 10-04-2021
+* CLI AutoLogin WMS Venue Update 15-04-2021
 ```
 $ wget --no-check-certificate https://raw.githubusercontent.com/portalssh/autologin/main/wms/config/wms_sh
 ```
-* CLI AutoLogin WIFI.ID Update 10-04-2021
+* CLI AutoLogin WIFI.ID Update 15-04-2021
 ```
 $ wget --no-check-certificate https://raw.githubusercontent.com/portalssh/autologin/main/wms/config/wifi_id
 ```
