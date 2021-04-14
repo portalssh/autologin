@@ -1,1 +1,0 @@
-brcm53xx-generic
