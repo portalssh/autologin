@@ -12,7 +12,7 @@ $ /etc/init.d/uhttpd restart
 * Tampilan GUI AutoLogin "http://ip_router/cgi-bin/autowms"
 
 <div  align="center">    
-  <img src="./config/GUI-wms.png" width = "1200" alt="curl bash" align=center />
+  <img src="./wms/config/GUI-wms.png" width = "1200" alt="curl bash" align=center />
 </div>
 
 ```
@@ -20,7 +20,7 @@ $ /etc/init.d/uhttpd restart
 * contoh curl bash login page
 
 <div  align="center">    
-  <img src="./config/curl-wms.png" width = "1200" alt="curl bash" align=center />
+  <img src="./wms/config/curl-wms.png" width = "1200" alt="curl bash" align=center />
 </div>
 
 ```
@@ -28,7 +28,7 @@ $ /etc/init.d/uhttpd restart
 * Edit config AutoLogin "nano auto_wms"
 
 <div  align="center">    
-  <img src="./autologin/wms/config/wms-config.png" width = "1200" alt="curl bash" align=center />
+  <img src="./wms/config/wms-config.png" width = "1200" alt="curl bash" align=center />
 </div>
 
 ```
