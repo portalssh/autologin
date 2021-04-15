@@ -16,7 +16,7 @@ then
 
      wlan_mac=$(ifconfig wlan0 | grep -o -E '([[:xdigit:]]{1,2}:){5}[[:xdigit:]]{1,2}')
 
-     wget --post-data="username=isiusernamewms.@wms.1253052950.000&password=isipasswordwms" "https://10.233.16.13/wms/auth/authnew/autologin/quarantine.php?ipc="$ipwan"&gw_id=WAG-D6-CKA&client_mac=$wlan_mac&wlan=SGSEG00432-N/TLK-CI-84183:CONTOH-HOTSPOT@WIFI.ID" -O /dev/null --no-check-certificate
+     wget --post-data="username=isiusernamewms.@wms.1253052950.000&password=isipasswordwms" "https://welcome2.wifi.id/wms/auth/authnew/autologin/quarantine.php?ipc="$ipwan"&gw_id=WAG-D6-CKA&client_mac=$wlan_mac&wlan=SGSEG00432-N/TLK-CI-84183:CONTOH-HOTSPOT@WIFI.ID" -O /dev/null --no-check-certificate
 
 else 
 
