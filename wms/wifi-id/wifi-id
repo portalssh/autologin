@@ -3,7 +3,7 @@ case $1 in
 "install")
 cp -f wifi-id /usr/bin/
 sleep 1
-chmod 755 /usr/bin/wifi_id
+chmod 755 /usr/bin/wifi-id
 opkg update
 opkg install libustream-openssl ca-bundle ca-certificates wget bash nano openssl-util libustream-openssl
 
