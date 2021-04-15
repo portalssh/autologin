@@ -7,7 +7,7 @@ chmod 755 /usr/bin/wifi-id
 opkg update
 opkg install libustream-openssl ca-bundle ca-certificates wget bash nano openssl-util libustream-openssl
 
-cat > /root/auto_wms <<\EOF
+cat > /root/wifi_id <<\EOF
 #!/bin/bash
 # isikan Username dan password disini
 
