@@ -1,12 +1,6 @@
 * installasi GUI AutoLogin WMS Venue Update 15-04-2021
 ```
 $ wget --no-check-certificate https://raw.githubusercontent.com/portalssh/autologin/main/wms/auto_wms && chmod 755 ./auto_wms && ./auto_wms install
-$ mkdir -p /www/image
-$ cd /www/image
-$ wget --no-check-certificate https://github.com/portalssh/autologin/raw/main/wms/config/logo3.png
-$ wget --no-check-certificate https://github.com/portalssh/autologin/raw/main/wms/config/favicon.png
-$ cd
-$ /etc/init.d/uhttpd restart
 ```
 
 * Tampilan GUI AutoLogin "http://ip_router/cgi-bin/autowms"
