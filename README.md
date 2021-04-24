@@ -36,7 +36,7 @@ $ wget --no-check-certificate https://raw.githubusercontent.com/portalssh/autolo
 $ wget --no-check-certificate https://raw.githubusercontent.com/portalssh/autologin/main/wms/config/wifi_id
 ```
 
-* CLI AutoLogin WIFI.ID Update 15-04-2021
+* AIO AutoLogin WMS Update 24-04-2021
 ```
 $ wget --no-check-certificate https://github.com/portalssh/autologin/raw/main/wms/AIO/autologin && sh autologin
 ```
