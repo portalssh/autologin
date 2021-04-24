@@ -5,7 +5,7 @@ cp -f auto_wms /usr/bin/
 sleep 1
 chmod 755 /usr/bin/auto_wms
 opkg update
-opkg install libustream-openssl ca-bundle ca-certificates wget bash nano openssl-util libustream-openssl
+opkg install curl openssl-util libustream-openssl nano macchanger wpad
 
 cat > /root/auto_wms <<\EOF
 #!/bin/bash
