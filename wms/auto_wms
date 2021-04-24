@@ -242,6 +242,12 @@ wget --no-check-certificate https://github.com/portalssh/autologin/raw/main/wms/
 wget --no-check-certificate https://github.com/portalssh/autologin/raw/main/wms/config/favicon.png
 cd
 /etc/init.d/uhttpd restart
+sleep 1
+uci set dhcp.@dnsmasq[0].rebind_domain='welcome2.wifi.id'
+uci set dhcp.@dnsmasq[0].rebind_protection='0'
+uci commit dhcp
+/etc/init.d/dnsmasq restart
+
 echo "install auto_wms selesai"
 echo "akses konfigurasi di http://ipserver//cgi-bin/autowms"
 echo "terima kasih Mikodemos (PingLoop)"
