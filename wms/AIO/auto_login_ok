@@ -21,7 +21,7 @@ then
 	opkg install openssl-util libustream-openssl 
 	opkg install nano 
 	opkg install macchanger 
-	opkg remove wpa-basic
+	opkg remove wpad-basic
 	opkg install wpad
 	# Jika salah satu package terjadi kegagalan instalasi.
 	# silahkan lakukan instalasi manual via GUI ==> Software ==> Filter
